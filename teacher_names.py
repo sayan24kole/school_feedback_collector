@@ -7,7 +7,8 @@ if i == 1 or i==2 or i==3:
                 for x in range(0,tot_names):
                     names = input("Enter names of teachers")
                     f.write(f"{names}\n")
-                    f = open(f'{names}_teach.txt','x')
+                    k = open(f'{names}_teach.txt','x')
+                    k.close()
         case 2:
             with open('teacher_names.txt','r') as f:
                 print(f.read())
@@ -15,4 +16,5 @@ if i == 1 or i==2 or i==3:
             with open('teacher_names.txt','w') as f:
                 f.write("")
 else:
+
     print("Use number between 1,2,3")
