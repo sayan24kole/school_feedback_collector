@@ -1,0 +1,183 @@
+<html>
+<head>
+	<style>
+		form, lol1, div {
+			width: 340px;
+			height: 320px; 
+			
+			padding: 25px 30px;
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.9);
+			margin: 180px 10px; 
+			display: inline-block; 
+			vertical-align: top; 
+		}
+		lol1{
+			background-color: rgba(255, 193, 7, 0.8);
+			float: left;
+		}
+		
+		form{
+			background-color: rgba(255, 112, 67, 0.8);
+			float: right;
+		}
+		
+		div{
+			width: 340px;
+			height: 320px; 
+			background-color: rgba(0, 150, 136, 0.8);
+			padding: 25px 30px;
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.9);
+			margin: 180px auto 120px auto; 
+			position: relative;
+			left: 5px; 
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: 600;
+			color: #003366;
+			font-size: 18px;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			padding: 8px 10px;
+			font-size: 16px;
+			border: 2px solid #003366;
+			border-radius: 6px;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			transition: border-color 0.3s ease;
+		}
+
+		input[type="text"]:focus {
+			outline: none;
+			border-color: #0059b3;
+			background-color: #fc8df9;
+		}
+
+		button {
+			width: 100%;
+			background-color: #ADD8E6;
+			color: white;
+			padding: 10px 0;
+			font-size: 20px;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			font-weight: bold;
+			transition: background-color 0.3s ease;
+		}
+
+		button:hover {
+			background-color: #003d80;
+		}
+		
+		hakla{
+			width: 1180px;
+			min-height: 120px; 
+			background-color: rgba(63, 81, 181, 0.8);
+			padding: 25px 30px; 
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.9);
+			margin: 20px auto;
+			display: block; 
+			vertical-align: top;
+			position: relative;
+			top: 0; 
+			float: left
+		}			
+		a:link {
+			color: white;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited {
+			color: #D8EDEA;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:hover {
+			color: blue;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		a:active {
+			color: yellow;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+<hakla>
+<pre>
+	<h2><u><b>About me:</b></u></h2>
+	<h3>        Greetings everyone. My name is <b>Sayan Kole</b>. I am the creator of this website. I managed  <img src="https://img.freepik.com/free-photo/closeup-shot-purple-flower_181624-25863.jpg" alt="My face" width="200" height="150" style="float:right"> 
+        to accomplish both frontend and backend of this website. I am a student of<u> Vellore Institute of
+	Technology,</u> AP. I have 3+ months of professional experience in Python programming language, 
+	and am currently in the role of Automation. In addition, I have over three years of experience  
+	in <u>Java, Python Javascript, C++, Frontend, Backend, Flask, Django, HTML,MySql and Machine 
+	Learning.</u> This is a side-project I have been working on. To visit my LinkedIn or to connect
+	with me, please visit the bottom of this site, where all my social media links are provided.
+	<b>Happy Coding</b></h3>
+</pre></hakla>
+<img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-start-school-and-meet-the-semester-image_161952.jpg"width="100%" height="100%" style="position: fixed; top: 0; left: 0; z-index: -1;">
+<form action="{{ url_for('process_feedback') }}" method="POST" target="_self">
+    <u><b>Feedback Zone:</b></u><br><br><br>
+	<label for="teach">Name of teacher:</label>
+	<input id="teach" type="text" name="teach" required>
+
+	<label for="feedback">Feedback :</label>
+	<input id="feedback" type="text" name="feedback" required>
+
+	<button type="submit">Submit</button>
+</form>
+<lol1><pre>
+Welcome to the official student feedback portal
+of ST.Xavier's School Burdwan. 
+
+We believe that every student's voice matters. This 
+platform is designed to collect honest, anonymous
+input on courses, and faculty of this college,
+to make this school a better place for education.
+
+Your feedback helps us improve academic quality,
+enhance facilities,and foster a more inclusive 
+culture, making this school a better place.
+
+All school students are welcomed to give a
+review about all the positive as well as 
+negative aspect of this school and faculty.
+At the end nothing is perfect, but we can bring
+it close to perfect.
+</pre>
+</lol1>
+<div><b><u>______________Our Teachers______________</u></b>
+
+
+<pre>To see our list of teachers press the below
+link and all the teachers and staffs' name
+will be available. To provide the feedback
+you need to enter the name of either our
+staff of teachers and then provide the 
+feedback on the box below. Now press on the
+link below to visit and view all our staff
+and teachers.
+
+<a href="http://127.0.0.1:5050">Link to view list of teachers and staff</a>
+
+
+<u>Warning:</u> We expect everyone to keep the feedback
+respectful and considerate. All the feedback 
+irrespective of it being positive/negative should
+be done in a professional and kind manner.
+<b>Strict action will be taken for those who misuse 
+this freedom.</b></pre></div>
+<br><br><br>
+<pre>
+	<a href="https://www.linkedin.com/in/sayan24kole/">My LinkedIn</a>      <a href="https://www.youtube.com/@sayan24kole">My Youtube Page</a>
+</body>
